@@ -1,0 +1,9 @@
+DEPLOY:
+
+1. docker- najpierw npm run build
+   potem docker-compose build 
+   potem dopiero docker-compose up
+
+*(to chyba nie) w dockerze w serwisie auth należy w terminalu zainicjować komendę : npm run typeorm -- migration:generate apps/auth/src/db/migrations/initDB 
+
+2. Należy w terminalu kontenera auth wprowadzić komendę npm run run:migration 
